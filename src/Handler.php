@@ -7,8 +7,7 @@
  
 namespace Genial\FileSystem;
 
-use \Genial\FileSystem\Exception\
-{
+use \Genial\FileSystem\Exception\{
     RuntimeException
 };
 
@@ -36,8 +35,7 @@ class Handler extends HandlerConfig implements HandlerInterface
      */
     function __construct(string $root): void
     {
-        if (!\file_exists($path) && !\is_dir($path))
-        {
+        if (!\file_exists($path) && !\is_dir($path)) {
             throw new RuntimeException(\sprintf(
                 '`%s` The requested directory path does not exist. Passed: `%s`'
                 \__METHOD__,
