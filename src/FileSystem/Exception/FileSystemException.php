@@ -5,7 +5,7 @@
  * @license   <https://github.com/Genial-Framework/FileSystem/blob/master/LICENSE> New BSD License.
  */
 
-namespace Genial\FileSystem\FileInfo\Exception;
+namespace Genial\FileSystem\FileSystem\Exception;
 
 /**
  * ExceptionInterface.
