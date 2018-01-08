@@ -7,7 +7,8 @@
  
 namespace Genial\FileSystem;
 
-use \Genial\FileSystem\Exception\{
+use \Genial\FileSystem\Exception\
+{
     RuntimeException
 };
 
