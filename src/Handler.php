@@ -17,15 +17,15 @@ use \Genial\FileSystem\Exception\{
 class Handler extends HandlerConfig implements HandlerInterface
 {
   
-    function __construct(string $root = null)
+    function __construct(string $root = null): void
     {
         $path = self::APP_ROOT . $root;
         if (!\file_exists($path) && !\is_dir($path))
         {
-            throw new RuntimeException(sprintf(
+            throw new RuntimeException(\sprintf(
                 '`%s` The requested directory path does not exist. Passed: `%s`'
                 \__METHOD__,
-                htmlspecialchars($root, ENT_QUOTES, 'UTF-8')
+                \htmlspecialchars($root, \ENT_QUOTES, 'UTF-8')
             ), 100);
         }
         
