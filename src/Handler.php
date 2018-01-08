@@ -17,7 +17,7 @@ use \Genial\FileSystem\Exception\{
 class Handler extends HandlerConfig implements HandlerInterface
 {
   
-    function __construct(string $root = null): void
+    function __construct(string $root): void
     {
         $path = self::APP_ROOT . $root;
         if (!\file_exists($path) && !\is_dir($path))
