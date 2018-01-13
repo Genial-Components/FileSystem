@@ -6,7 +6,7 @@
  */
 namespace Syzer\FileSystem;
 use \Syzer\Exception\{
-    
+    BadMethodCallException
 };
 /**
  * Handler.
@@ -16,7 +16,11 @@ class Handler extends FileSystem implements HandlerInterface
     public function delete(string $path) {
         $path = \rtrim(\ltrim($path));
         if (\empty($path) || $path == '') {
-
+            throw new BadMethodCallException(\sprintf(
+                '`%s`The requested path is empty.',
+                __METHOD__
+            ));
         }
+        
     }
 }
