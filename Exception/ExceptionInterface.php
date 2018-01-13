@@ -10,10 +10,4 @@ namespace Syzer\FileSystem\Exception;
  */
 interface ExceptionInterface
 {
-    function __construct(
-        string $message = null,
-        int $code = null,
-        string $file = null,
-        int $line = null
-    );
 }
