@@ -19,7 +19,7 @@ class Handler extends FileSystem implements HandlerInterface
         if (\empty($path) || $path == '') {
             return \false;
         }
-        $valid = $this->validate($path, ['f', 'bp']);
+        $valid = $this->validate($path, ['f', 'ic', 'bp']);
         if (!$valid) {
             throw new DomainException(\sprintf(
                 '`%s` Invalid file path.',
