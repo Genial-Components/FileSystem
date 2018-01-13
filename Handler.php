@@ -8,6 +8,6 @@ namespace Syzer\FileSystem;
 /**
  * Handler.
  */
-class Handler implements HandlerInterface
+class Handler extends FileSystem implements HandlerInterface
 {
 }
