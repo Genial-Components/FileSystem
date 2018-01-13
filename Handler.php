@@ -6,7 +6,8 @@
  */
 namespace Syzer\FileSystem;
 use \Syzer\Exception\{
-    BadMethodCallException
+    DomainException,
+    
 };
 /**
  * Handler.
@@ -16,11 +17,15 @@ class Handler extends FileSystem implements HandlerInterface
     public function delete(string $path) {
         $path = \rtrim(\ltrim($path));
         if (\empty($path) || $path == '') {
-            throw new BadMethodCallException(\sprintf(
-                '`%s` The requested path is empty.',
+            return \false;
+        }
+        $valid = $this->validate($path, ['f', 'bp']);
+        if (!$valid) {
+            throw new DomainException(\sprintf(
+                '`%s` Invalid file path.',
                 __METHOD__
             ));
         }
-        
+        return unlink($path);
     }
 }
