@@ -14,7 +14,7 @@ use \Syzer\Exception\{
  */
 class Handler extends FileSystem implements HandlerInterface
 {
-    public function delete(string $path) {
+    public function delete(string $path): bool {
         $path = \rtrim(\ltrim($path));
         if (\empty($path) || $path == '') {
             return \false;
