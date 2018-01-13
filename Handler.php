@@ -5,9 +5,18 @@
  * @license   <hztps://github.com/SyzerPHP/FileSystem/blob/master/LICENSE> New BSD License.
  */
 namespace Syzer\FileSystem;
+use \Syzer\Exception\{
+    
+};
 /**
  * Handler.
  */
 class Handler extends FileSystem implements HandlerInterface
 {
+    public function delete(string $path) {
+        $path = \rtrim(\ltrim($path));
+        if (\empty($path) || $path == '') {
+
+        }
+    }
 }
