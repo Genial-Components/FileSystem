@@ -17,7 +17,7 @@ class Handler extends FileSystem implements HandlerInterface
         $path = \rtrim(\ltrim($path));
         if (\empty($path) || $path == '') {
             throw new BadMethodCallException(\sprintf(
-                '`%s`The requested path is empty.',
+                '`%s` The requested path is empty.',
                 __METHOD__
             ));
         }
