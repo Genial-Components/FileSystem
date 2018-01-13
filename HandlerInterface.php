@@ -10,4 +10,5 @@ namespace Syzer\FileSystem;
  */
 interface HandlerInterface
 {
+    public function delete(string $path);
 }
