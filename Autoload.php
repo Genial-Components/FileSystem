@@ -5,4 +5,5 @@
  * @license   <hztps://github.com/SyzerPHP/FileSystem/blob/master/LICENSE> New BSD License.
  */
 define('FILESYSTEM_COMPONENT', 'PRE-LOADED');
+define('FILESYSTEM_NAMESPACE', 'Syzer\FileSystem');
 define('FILESYSTEM_DIRS', ['Exception']);
