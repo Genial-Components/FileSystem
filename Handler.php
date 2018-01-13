@@ -26,6 +26,6 @@ class Handler extends FileSystem implements HandlerInterface
                 __METHOD__
             ));
         }
-        return unlink($path);
+        return \unlink($path);
     }
 }
