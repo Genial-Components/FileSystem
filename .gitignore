@@ -1,0 +1,9 @@
+/vendor/
+/build/
+/composer.phar
+/composer.json
+/composer.lock
+/.travis.yml
+/.coveralls.yml
+/psalm.xml
+/phpunit.xml
