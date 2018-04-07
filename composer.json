@@ -1,27 +1,27 @@
 {
-    "name": "genial/filesystem",
-    "description": "Easy-to-use database abstraction.",
+    "name": "genial-framework/pusher-bridge",
+    "description": "A bridge between genial framework and with the Pusher REST API",
+    "keywords": [
+        "pusher-http-php",
+        "pusher-bridge",
+        "rest-api"
+    ],
     "license": "MIT",
     "authors": [
         {
-            "name": "Nicholas English",
-            "email": "nenglish6657@gmail.com",
-            "homepage": "https://github.com/Nenglish7",
-            "role": "Develop"
-        },
-        {
-            "name": "FileSystem Contributors",
-            "homepage": "https://github.com/Genial-Framework/FileSystem/graphs/contributors",
+            "name": "Pusher Bridge Contributors",
+            "homepage": "https://github.com/genial-framework/pusher-bridge/graphs/contributors",
             "role": "Contribute"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Genial\\FileSystem\\": "./src"
+            "Genial\\Pusher\\": "./src"
         }
     },
     "require": {
-        "php": ">=7.2"
+        "php": ">=7.2",
+        "pusher/pusher-php-server": "^3",
     },
     "require-dev": {
         "phpunit/phpunit": "^7",
