@@ -1,6 +1,6 @@
 {
     "name": "genial-framework/pusher-bridge",
-    "description": "A bridge between genial framework and with the Pusher REST API",
+    "description": "A bridge between Genial and with the Pusher REST API",
     "keywords": [
         "pusher-http-php",
         "pusher-bridge",
